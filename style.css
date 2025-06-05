@@ -1,0 +1,355 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #4169E1;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: #007acc;
+}
+a:hover {
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+header, main, footer {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1rem;
+}
+header {
+  padding: 2rem 1rem 1rem;
+  background:#45644A;
+  color: white;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+}
+header nav {
+  margin-top: 0px;
+}
+header nav a {
+  margin: 0 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+header nav a:hover, header nav a.active {
+  color: #ffe600;
+}
+section {
+  margin-top: opx;
+}
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0px;
+}
+h2 {
+  font-size: 2rem;
+  border-bottom: 3px solid #007acc;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+p {
+  margin-bottom: opx;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem 3rem;
+  background: linear-gradient(90deg, #403F44 0%, #1E1B32 100%);
+  color: white;
+  border-radius: 12px;
+}
+#home .intro {
+  flex: 1 1 350px;
+  max-width: 500px;
+}
+#home .intro h1 {
+  font-size: 3.25rem;
+  margin-bottom: 0.2rem;
+}
+#home .intro p {
+  font-size: 1.35rem;
+  font-weight: 300;
+  margin-top: 0.75rem;
+}
+#home img {
+  flex: 1 1 280px;
+  max-width: 400px;
+  border-radius: 150%;
+   height: auto;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* About Me */
+#about p.bio {
+  font-size: 1.1rem;
+  font-style: italic;
+  max-width: 850px;
+}
+#about ul {
+  list-style: none;
+  padding: 0;
+  max-width: 850px;
+}
+#about ul li {
+  margin-bottom: 0.6rem;
+}
+#about ul li strong {
+  display: inline-block;
+  width: 120px;
+  color: #007acc;
+}
+
+/* Projects */
+#projects .project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 1.6rem;
+}
+.project {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  padding: 1rem 1.25rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project img {
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+.project h3 {
+  margin-bottom: 0.4rem;
+  color: #007acc;
+}
+.project p {
+  flex-grow: 1;
+  font-size: 0.95rem;
+  color: #444;
+}
+.project .tech {
+  margin: 0.75rem 0 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #555;
+}
+.project-links {
+  margin-top: auto;
+}
+.project-links a {
+  margin-right: 1rem;
+  font-weight: 600;
+  color: #007acc;
+  font-size: 0.9rem;
+}
+
+/* Skills */
+#skills .skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 900px;
+}
+.skill-category {
+  flex: 1 1 280px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  padding: 1rem 1.5rem 1.5rem;
+}
+.skill-category h3 {
+  margin-bottom: 1rem;
+  color: #007acc;
+}
+.skill-item {
+  margin-bottom: 0.8rem;
+}
+.skill-name {
+  font-weight: 600;
+}
+.skill-bar-bg {
+  background: #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 4px;
+}
+.skill-bar {
+  height: 10px;
+  background: #007acc;
+  width: 0;
+  border-radius: 6px;
+  transition: width 1s ease-in-out;
+  width: 90%;
+}
+
+/* Resume Section */
+#resume {
+  background: white;
+  max-width: 480px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgb(0 0 0 / 0.15);
+  padding: 1.8rem 2rem;
+  text-align: center;
+}
+#resume a {
+  background: #007acc;
+  color: white;
+  padding: 0.75rem 1.6rem;
+  font-weight: 600;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+#resume a:hover {
+  background: #005fa3;
+}
+
+/* Certifications */
+#certifications .cert-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  justify-content: center;
+}
+.cert-item {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  max-width: 260px;
+  padding: 1rem;
+  text-align: center;
+  max-height: 210;
+}
+.cert-item img {
+  max-height: 210px;
+  margin-bottom: 2rem;
+  object-fit: contain;
+}
+.cert-item p {
+  font-size: 0.9rem;
+  color: #333;
+}
+.cert-item small {
+  color: #888;
+}
+
+/* Contact */
+#contact form {
+  max-width: 480px;
+  margin: auto;
+  background: white;
+  padding: 2rem 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 16px rgb(0 0 0 / 0.15);
+}
+#contact form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  margin-top: 1rem;
+}
+#contact form input, 
+#contact form textarea {
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+}
+#contact form button {
+  margin-top: 1.2rem;
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#contact form button:hover {
+  background: #005fa3;
+}
+#contact .contact-info {
+  margin-top: 1.4rem;
+  text-align: center;
+  color: #555;
+}
+#contact .contact-info a {
+  margin: 0 0.75rem;
+}
+
+/* Blog teaser */
+#blog .blog-list {
+  max-width: 920px;
+  margin: auto;
+}
+#blog .blog-article {
+  background: white;
+  margin-bottom: 1.6rem;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+}
+#blog .blog-article h4 {
+  margin: 0 0 0.4rem 0;
+  color: #007acc;
+}
+#blog .blog-article p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding: 1.6rem 1rem;
+  text-align: center;
+  background: #222;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #ccc;
+  margin: 0 0.5rem;
+  font-weight: 600;
+}
+footer a:hover {
+  color: #007acc;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 900px) {
+  #home {
+    flex-direction: column;
+    padding: 2rem 1rem 2.5rem;
+  }
+};
